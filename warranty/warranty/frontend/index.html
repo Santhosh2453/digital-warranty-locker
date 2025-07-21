@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Warranty Locker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1 class="main-title">Digital Warranty Locker</h1>
+
+  <!-- Add Product Form -->
+  <div class="form-section">
+    <h2 class="form-title">Add Product</h2>
+    <form id="productForm">
+      <table class="form-table">
+        <tr>
+          <td><label for="name">Product Name:</label></td>
+          <td><input type="text" id="name" required /></td>
+        </tr>
+        <tr>
+          <td><label for="brand">Brand:</label></td>
+          <td><input type="text" id="brand" required /></td>
+        </tr>
+        <tr>
+          <td><label for="category">Category:</label></td>
+          <td><input type="text" id="category" required /></td>
+        </tr>
+        <tr>
+          <td><label for="purchaseDate">Purchase Date:</label></td>
+          <td><input type="date" id="purchaseDate" required /></td>
+        </tr>
+        <tr>
+          <td><label for="warrantyExpiry">Warranty Expiry:</label></td>
+          <td><input type="date" id="warrantyExpiry" required /></td>
+        </tr>
+        <tr>
+          <td><label for="billImageUrl">Bill Image URL:</label></td>
+          <td><input type="url" id="billImageUrl" /></td>
+        </tr>
+      </table>
+      <div style="text-align: center;">
+        <button type="submit">Add Product</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Product List -->
+  <hr />
+  <h2 style="text-align: center;">All Products</h2>
+  <table border="1" cellpadding="10" style="width: 100%; text-align: left;">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Brand</th>
+        <th>Category</th>
+        <th>Purchase Date</th>
+        <th>Warranty Expiry</th>
+        <th>Bill</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="productList">
+      <!-- JS will fill this -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
